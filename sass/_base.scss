@@ -53,8 +53,6 @@ body {
 
 }
 
-
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -96,13 +94,18 @@ body {
   border-radius: 10px;
   width: 140px;
   border: 0;
+  margin-bottom: 1.3rem;
   cursor: pointer;
 }
 
 .clients {
   margin-top: $margin-small;
+  margin-bottom: $margin-small;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
 }
 
 .client-img {
-  
+  height: 18px;
 }
