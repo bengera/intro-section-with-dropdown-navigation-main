@@ -318,11 +318,82 @@ body {
   margin: 0;
   padding: 0; }
 
-.nav {
+a {
+  text-decoration: none; }
+
+.top {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   margin-top: 0.5rem; }
+
+.nav-toggle {
+  background-color: transparent;
+  background-image: url(/images/icon-menu.svg);
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-position: center center;
+  z-index: 20; }
+
+.nav-toggle.active {
+  background-image: url(/images/icon-close-menu.svg); }
+
+.navigation-mobile {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  width: 65vw;
+  background-color: #FFF;
+  z-index: 10; }
+
+.navigation-mobile.show {
+  display: block; }
+
+.navigation-content {
+  margin-top: 8rem; }
+
+.list {
+  color: #FFF;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.8rem;
+  list-style: none;
+  padding-left: 1.2rem; }
+  .list__item {
+    letter-spacing: 0.07em; }
+  .list__link {
+    color: #717171; }
+
+.navigation-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  gap: 1rem;
+  align-items: center; }
+
+.btn-login {
+  border: 0;
+  background-color: transparent;
+  color: #717171;
+  cursor: pointer; }
+
+.btn-register {
+  padding: 0.7rem;
+  border: 2px solid #717171;
+  background-color: transparent;
+  border-radius: 10px;
+  color: #717171;
+  width: 90%;
+  cursor: pointer; }
 
 .container {
   display: flex;
@@ -364,3 +435,23 @@ img {
 
 .client-img {
   height: 18px; }
+
+#overlay {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */ }

@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -19,10 +20,32 @@
 
 <body>
 
-  <nav class="nav">
+  <div id="overlay">
+    
+  </div>
+
+  <div class="top">
+    
     <img src = "images/logo.svg" alt="logo"/>
-    <img src = "images/icon-menu.svg" alt="icon-menu"/>
-  </nav>
+    <button class="nav-toggle"></button>
+
+    <nav class="navigation-mobile">
+      <div class="navigation-content">
+      <ul class="list">
+        <li class="list__item"><a class="list__link" href="#">Features</a></li>
+        <li class="list__item"><a class="list__link" href="#">Company</a></li>
+        <li class="list__item"><a class="list__link" href="#">Careers</a></li>
+        <li class="list__item"><a class="list__link" href="#">About</a></li>
+      </ul>
+
+      <div class="navigation-buttons">
+      <button class="btn-login">Login</button>
+      <button class="btn-register">Register</button>
+    </div>
+    </div><!--navigation-content-end-->
+    </nav>
+    <!-- <span style="font-weight:bold">03</span>  -->
+  </div>
 
 
   <main>
