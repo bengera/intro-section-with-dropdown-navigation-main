@@ -2,6 +2,9 @@ const menu = document.querySelector('.nav-toggle');
 const navUL = document.querySelector('.navigation-mobile');
 const overlay = document.getElementById('overlay');
 
+const features = document.querySelector('.list__link-features');
+const dropDown = document.querySelector('.drop-down__features');
+
 
 menu.addEventListener('click',() => {
     console.log('toggle-menu');
@@ -16,5 +19,10 @@ menu.addEventListener('click',() => {
         overlay.setAttribute("style", "display:none"); 
     }
    
+})
+
+features.addEventListener('click',() => {
+    console.log('toggle-features');
+    dropDown.classList.toggle('show-f');
 })
 

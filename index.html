@@ -21,7 +21,7 @@
 <body>
 
   <div id="overlay">
-    
+
   </div>
 
   <div class="top">
@@ -29,13 +29,26 @@
     <img src = "images/logo.svg" alt="logo"/>
     <button class="nav-toggle"></button>
 
-    <nav class="navigation-mobile">
+    <nav class="navigation-mobile show">
       <div class="navigation-content">
-      <ul class="list">
-        <li class="list__item"><a class="list__link" href="#">Features</a></li>
-        <li class="list__item"><a class="list__link" href="#">Company</a></li>
+      <ul class="list active">
+        <li class="list__item"><a class="list__link-features" href="#">Features</a></li>
+
+        <div class="drop-down__features">
+          <ul class="list">
+            <li class="list__item"><a href="#" class="list__link todo">Todo List</a></li>
+            <li class="list__item"><a href="#" class="list__link calender">Calender</a></li>
+            <li class="list__item"><a href="#" class="list__link reminders">Reminders</a></li>
+            <li class="list__item"><a href="#" class="list__link planning">Planning</a></li>
+          </ul>
+        </div>
+
+        <li class="list__item"><a class="list__link-company" href="#">Company</a></li>
         <li class="list__item"><a class="list__link" href="#">Careers</a></li>
         <li class="list__item"><a class="list__link" href="#">About</a></li>
+
+        
+
       </ul>
 
       <div class="navigation-buttons">
@@ -51,7 +64,7 @@
   <main>
   <div class="container">
     <div class="image-container">
-    <img src="images/image-hero-mobile.png" alt="icon-menu"/>
+    <img class="hero-img" src="images/image-hero-mobile.png" alt="icon-menu"/>
           </div>
           <h1>Make remote work</h1>
   <p class="description">

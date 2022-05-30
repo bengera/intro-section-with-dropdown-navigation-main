@@ -370,6 +370,10 @@ a {
     letter-spacing: 0.07em; }
   .list__link {
     color: #717171; }
+  .list__link-features:after, .list__link-company:after {
+    content: url(../images/icon-arrow-down.svg);
+    margin-left: 0.6rem;
+    transition: 0.3s ease-in-out; }
 
 .navigation-buttons {
   display: flex;
@@ -395,6 +399,38 @@ a {
   width: 90%;
   cursor: pointer; }
 
+.drop-down {
+  height: 100%; }
+  .drop-down__features {
+    width: 70%;
+    display: none; }
+  .drop-down__features.show-f {
+    display: block; }
+
+.list__link.todo:before {
+  content: url(../images/icon-todo.svg);
+  display: inline-block;
+  height: 100%;
+  margin-right: 0.6rem; }
+
+.list__link.calender:before {
+  content: url(../images/icon-calendar.svg);
+  display: inline-block;
+  height: 100%;
+  margin-right: 0.6rem; }
+
+.list__link.reminders:before {
+  content: url(../images/icon-reminders.svg);
+  display: inline-block;
+  height: 100%;
+  margin-right: 0.6rem; }
+
+.list__link.planning:before {
+  content: url(../images/icon-planning.svg);
+  display: inline-block;
+  height: 100%;
+  margin-right: 0.6rem; }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -404,7 +440,7 @@ a {
   margin-top: 2rem;
   margin-bottom: 1.3rem; }
 
-img {
+.hero-img {
   max-width: 100%;
   height: auto;
   max-height: 100%; }
@@ -450,8 +486,5 @@ img {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Black background with opacity */
   z-index: 2;
-  /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer;
-  /* Add a pointer on hover */ }
+  /* Specify a stack order in case you're using a different order for other elements */ }
