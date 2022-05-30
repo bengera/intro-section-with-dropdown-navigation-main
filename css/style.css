@@ -327,6 +327,15 @@ a {
   justify-content: space-between;
   padding: 1rem;
   margin-top: 0.5rem; }
+  @media only screen and (min-width: 62.5em) {
+    .top {
+      max-width: 1200px;
+      margin: 0 auto; } }
+
+@media only screen and (min-width: 62.5em) {
+  h1 {
+    font-size: clamp(70px, 30vw, 40px);
+    margin: 0; } }
 
 .nav-toggle {
   background-color: transparent;
@@ -338,6 +347,9 @@ a {
   height: 30px;
   background-position: center center;
   z-index: 20; }
+  @media only screen and (min-width: 62.5em) {
+    .nav-toggle {
+      display: none; } }
 
 .nav-toggle.active {
   background-image: url(../images/icon-close-menu.svg); }
@@ -441,22 +453,45 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (min-width: 62.5em) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 1200px;
+      margin: 0 auto; } }
 
 .image-container {
   margin-top: 2rem;
   margin-bottom: 1.3rem; }
+  @media only screen and (min-width: 62.5em) {
+    .image-container {
+      grid-column: 2 / 2;
+      height: 800px; } }
 
 .hero-img {
   max-width: 100%;
   height: auto;
   max-height: 100%; }
+  @media only screen and (min-width: 62.5em) {
+    .hero-img {
+      display: none; } }
+
+.hero-img-desktop {
+  display: none; }
+  @media only screen and (min-width: 62.5em) {
+    .hero-img-desktop {
+      display: block;
+      max-height: 80%; } }
 
 .description {
   color: #717171;
   line-height: 26px;
   max-width: 85%;
-  text-align: center;
-  margin-bottom: 1.3rem; }
+  margin-bottom: 1.3rem;
+  margin: 0 auto 1rem auto; }
+  @media only screen and (min-width: 62.5em) {
+    .description {
+      margin: 0; } }
 
 .cta-btn {
   background-color: #0b0d17;
@@ -473,10 +508,26 @@ a {
   margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
-  width: 90%; }
+  width: 90%;
+  margin: 1rem auto 1rem auto; }
+  @media only screen and (min-width: 62.5em) {
+    .clients {
+      width: 75%;
+      margin: 0; } }
 
 .client-img {
   height: 18px; }
+
+.left-content {
+  text-align: center; }
+  @media only screen and (min-width: 62.5em) {
+    .left-content {
+      grid-row: 1 / 1;
+      display: flex;
+      flex-direction: column;
+      align-content: left;
+      text-align: inherit;
+      gap: 1rem; } }
 
 #overlay {
   position: fixed;

@@ -55,6 +55,20 @@ a {
   justify-content: space-between;
   padding: 1rem;
   margin-top: 0.5rem;
+
+  @media only screen and (min-width: $bp-desktop) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+h1 {
+
+  @media only screen and (min-width: $bp-desktop) {
+    font-size: clamp(70px, 30vw, 40px);
+    margin: 0;
+  }
+  
 }
 
 
