@@ -15,7 +15,7 @@
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  
+
 </head>
 
 <body>
@@ -25,66 +25,76 @@
   </div>
 
   <div class="top">
-    
-    <img src = "images/logo.svg" alt="logo"/>
+
+    <img src="images/logo.svg" alt="logo" />
     <button class="nav-toggle"></button>
 
     <nav class="navigation-mobile">
       <div class="navigation-content">
-      <ul class="list active">
-        <li class="list__item"><a class="list__link-features" href="#">Features</a></li>
+        <ul class="list active">
+          <li class="list__item"><a class="list__link-features" href="#">Features</a></li>
 
-        <div class="drop-down__features">
-          <ul class="list">
-            <li class="list__item"><a href="#" class="list__link todo">Todo List</a></li>
-            <li class="list__item"><a href="#" class="list__link calender">Calender</a></li>
-            <li class="list__item"><a href="#" class="list__link reminders">Reminders</a></li>
-            <li class="list__item"><a href="#" class="list__link planning">Planning</a></li>
-          </ul>
+          <div class="drop-down__features">
+            <ul class="list sub-list">
+              <li class="list__item"><a href="#" class="list__link todo">Todo List</a></li>
+              <li class="list__item"><a href="#" class="list__link calender">Calender</a></li>
+              <li class="list__item"><a href="#" class="list__link reminders">Reminders</a></li>
+              <li class="list__item"><a href="#" class="list__link planning">Planning</a></li>
+            </ul>
+          </div>
+
+          <li class="list__item"><a class="list__link-company" href="#">Company</a></li>
+          <div class="drop-down__company">
+            <ul class="list sub-list">
+              <li class="list__item"><a href="#" class="list__link">History</a></li>
+              <li class="list__item"><a href="#" class="list__link">Our Team</a></li>
+              <li class="list__item"><a href="#" class="list__link">Blog</a></li>
+            </ul>
+          </div>
+
+          <li class="list__item"><a class="list__link" href="#">Careers</a></li>
+          <li class="list__item"><a class="list__link" href="#">About</a></li>
+
+
+
+        </ul>
+
+        <div class="navigation-buttons">
+          <button class="btn-login">Login</button>
+          <button class="btn-register">Register</button>
         </div>
-
-        <li class="list__item"><a class="list__link-company" href="#">Company</a></li>
-        <li class="list__item"><a class="list__link" href="#">Careers</a></li>
-        <li class="list__item"><a class="list__link" href="#">About</a></li>
-
-        
-
-      </ul>
-
-      <div class="navigation-buttons">
-      <button class="btn-login">Login</button>
-      <button class="btn-register">Register</button>
-    </div>
-    </div><!--navigation-content-end-->
+      </div>
+      <!--navigation-content-end-->
     </nav>
     <!-- <span style="font-weight:bold">03</span>  -->
   </div>
 
 
   <main>
-  <div class="container">
-    <div class="image-container">
-    <img class="hero-img" src="images/image-hero-mobile.png" alt="icon-menu"/>
-          </div>
-          <h1>Make remote work</h1>
-  <p class="description">
-    Get your team in sync, no matter your location. Streamline processes,
-  create team rituals, and watch productivity soar.
+    <div class="container">
+      <div class="image-container">
+        <img class="hero-img" src="images/image-hero-mobile.png" alt="icon-menu" />
+      </div>
+      <h1>Make remote work</h1>
+      <p class="description">
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
 
-  </p>
-  
-  <button class="cta-btn">
-    Learn more
-  </button>
-  
-  <div class="clients">
-    <img class="client-img" src="images/client-databiz.svg" alt="client-databiz"/>
-    <img class="client-img" src="images/client-audiophile.svg" alt="client-audiophile"/>
-    <img class="client-img" src="images/client-meet.svg" alt="client-meet"/>
-    <img class="client-img" src="images/client-maker.svg" alt="client-maker"/>
-  </div>
-</div><!--container-end-->
-</main>
+      </p>
+
+      <button class="cta-btn">
+        Learn more
+      </button>
+
+      <div class="clients">
+        <img class="client-img" src="images/client-databiz.svg" alt="client-databiz" />
+        <img class="client-img" src="images/client-audiophile.svg" alt="client-audiophile" />
+        <img class="client-img" src="images/client-meet.svg" alt="client-meet" />
+        <img class="client-img" src="images/client-maker.svg" alt="client-maker" />
+      </div>
+    </div>
+    <!--container-end-->
+  </main>
 
 </body>
 
