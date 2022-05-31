@@ -54,6 +54,7 @@
 
   @media only screen and (min-width: $bp-desktop) {
     margin: 0;
+    font-size: 20px;
   }
 }
 
@@ -66,6 +67,13 @@
   border: 0;
   margin-bottom: 1.3rem;
   cursor: pointer;
+  border: 1px solid $color-dark;
+
+  &:hover {
+    color: $color-dark; 
+    background-color: $color-white; 
+    
+  }
 }
 
 .clients {
@@ -78,7 +86,8 @@
 
   @media only screen and (min-width: $bp-desktop) {
     width: 75%;
-    margin: 0;
+    margin: 3rem 0 0 0;
+    
   }
 }
 
@@ -95,7 +104,7 @@
     flex-direction: column;
     align-content: left;
     text-align: inherit;
-    gap: 1rem;
+    gap: 2rem;
   }
 }
 
