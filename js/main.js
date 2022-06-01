@@ -50,4 +50,22 @@ function resetMenu() {
   }
 
 
+  (function () {
+    window.onresize = displayWindowSize;
+    window.onload = displayWindowSize;
+  
+    function displayWindowSize() {
+      let myWidth = window.innerWidth;
+      console.log(myWidth);
+      
+      if (myWidth >= 1000) {
+      navUL.classList.remove('show');  
+      overlay.setAttribute("style", "display:none");
+      } else {
+        
+      }
+      
+    }
+  })();
+
 

@@ -403,11 +403,16 @@ a {
       paddin: 0;
       flex-direction: row;
       justify-content: inherit;
-      position: relative; } }
+      position: relative;
+      margin-top: 1rem; } }
   .list__item {
     letter-spacing: 0.07em; }
   .list__link {
     color: #717171; }
+    .list__link:hover {
+      color: #0b0d17; }
+  .list__link-features:hover, .list__link-company:hover {
+    color: #0b0d17; }
   .list__link-features:after, .list__link-company:after {
     content: url(../images/icon-arrow-down.svg);
     margin-left: 0.6rem; }
@@ -422,7 +427,7 @@ a {
       -webkit-box-shadow: 2px 9px 15px 5px #B6B6B6;
       box-shadow: 2px 9px 15px 5px #B6B6B6;
       border-radius: 25px;
-      padding: 1rem; } }
+      padding: 2rem; } }
 
 .navigation-buttons {
   display: flex;
@@ -457,7 +462,8 @@ a {
   cursor: pointer; }
   .btn-register:hover {
     color: #0b0d17;
-    background-color: #FFF; }
+    background-color: #FFF;
+    border-color: #0b0d17; }
   @media only screen and (min-width: 62.5em) {
     .btn-register {
       width: 140px; } }
@@ -468,7 +474,8 @@ a {
     .drop-down__features {
       position: absolute;
       top: 3rem;
-      left: -3rem; } }
+      left: -4rem;
+      background-color: #FFF; } }
   @media only screen and (min-width: 62.5em) {
     .drop-down__company {
       position: absolute;
@@ -477,8 +484,11 @@ a {
       width: 30%; } }
   .drop-down__features, .drop-down__company {
     width: 70%;
-    display: none;
-    width: 45%; }
+    display: none; }
+    @media only screen and (min-width: 62.5em) {
+      .drop-down__features, .drop-down__company {
+        width: 45%;
+        top: 1.5rem; } }
   .drop-down__features.show-f, .drop-down__company.show-f {
     display: block; }
 
@@ -516,6 +526,10 @@ a {
       grid-template-columns: 1fr 1fr;
       max-width: 1200px;
       margin: 0 auto; } }
+
+@media only screen and (min-width: 62.5em) {
+  .logo {
+    margin-top: 1.1rem; } }
 
 .image-container {
   margin-top: 2rem;
